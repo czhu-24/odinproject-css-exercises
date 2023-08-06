@@ -1,0 +1,21 @@
+
+
+.odd{
+    background-color: #e65f5f;
+    font-family: Verdana;
+}
+
+.adjust-font-size{
+    font-size: 32px;
+}
+
+#second{
+    /* it's big and a different color */
+    color: rgb(24, 138, 237);
+    font-size: 64px;
+}
+
+#fourth{
+    background-color: #23be42;
+    font-weight: bold;
+}
