@@ -2,13 +2,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.para,
-.small-para {
+.para {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
 
-.small-para {
+p.small-para {
   font-size: 14px;
   font-weight: 800;
 }
@@ -17,7 +16,13 @@ body {
   font-size: 22px;
 }
 
-.confirm {
+.confirm.button{
+  /* so using .confirm makes the background property show up on inspect element??? but why is it not being applied??? i assume it's not specific enough... but it's showing up on console, lol wut?
+  */
+
+  /* OOOOOOOH the .confirm & .button classes have the same specifity... except for the fact that the .button is declare AFTERWARDS, so its background-color takes precedence. BUT inspect element shows things alphabetically */
+
+  /* AND i didn't see the strikethrough because one of them is using background & the other is using background-color... so yeah*/
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +34,7 @@ body {
   font-size: 20px;
 }
 
-.child {
+.child.button {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
